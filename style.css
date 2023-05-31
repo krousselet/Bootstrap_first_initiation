@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces&display=swap');
+
+.a {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+}
+
+.a::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    color: red;
+    top: 10px;
+    z-index: 15;
+    transition: width .3s ease-in-out;
+}
+
+a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    color: red;
+    transition: width .3s ease-in-out;
+    z-index: 15;
+}
+
+.main {
+    background-image: url(../ressources/alice-dietrich-FwF_fKj5tBo-unsplash.jpg);
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+    opacity:100%;
+}
+
+.acs {
+    box-shadow: 20px 10px 0 rgba(255, 255, 255, 0.877);
+    font-family: 'Barlow', sans-serif;
+    padding: 16px 11px;
+    font-weight: bold;
+}
+
+.main-logos {
+    filter: invert(80%)
+}
+
+.main-title {
+    font-size: 134px;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.main-scrolldown {
+    font-family: 'Barlow', sans-serif;
+}
+
+.main-scroll {
+    filter: invert(80%);
+}
+
+.logo-title-w {
+    transform: translate(-50%, 50%);
+    font-size: 300px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.212);
+    font-family: 'Barlow', sans-serif;
+}
+
+.we-are {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.lorem {
+    font-family: 'Fraunces', sans-serif;
+}
+
+.lorem-bold {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-family: 'Barlow', sans-serif;
+}
+
+
+
+.blog-image {
+    border-radius: 0 50% 0 50%;
+    overflow: hidden;
+    border: 0px solid var(--bs-danger);
+    transition: border .5s ease-in-out;
+}
+
+.blog-image:hover {
+    border: 5px solid var(--bs-danger);
+    transition: border .5s ease-in-out;
+}
+
+.blog-main {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.blog-subheading {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.blog-text {
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.b {
+    font-family: 'Barlow', sans-serif;
+    font-size: 300px;
+    font-weight: bold;
+}
+
+.tell {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 31px;
+}
+
+.tell-slogan {
+    font-size: 29px;
+}
+
+@media (min-width:768px) {
+    .blog-bloc-one{
+        background-color: #222222;
+        color: white;
+    }
+
+    
+}
